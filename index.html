@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <h2>Mazuza</h2>
+        <div class="playlist" id="playlist"></div>
+    </aside>
+
+    <main class="player">
+        <span class="canto canto-esq">Faixa <span id="faixa-num">01</span> / 07</span>
+        <span class="canto canto-dir">Lado A</span>
+
+        <div class="disco">
+            <div class="vinil">
+                <img src="assets/capas/capa 1.jpg" id="capa" alt="Capa da música">
+                <span class="furo"></span>
+            </div>
+            <div class="brilho"></div>
+        </div>
+
+        <h1 id="titulo">musica</h1>
+        <h3 id="artista">Dona Duarte</h3>
+        <div class="tempo">
+            <span id="tempo-atual">0:00</span>
+            <input type="range" id="barra-tempo" value="0" min="0" max="100" step="any" aria-label="Progresso">
+            <span id="tempo-total">0:00</span>
+        </div>
+        <div class="controles">
+            <button id="anterior" aria-label="Anterior">⏮</button>
+            <button id="play" aria-label="Tocar ou pausar">▶</button>
+            <button id="proximo" aria-label="Próxima">⏭</button>
+        </div>
+        <div class="volume">
+            <span>🔈</span>
+            <input type="range" id="barra-volume" value="100" min="0" max="100" aria-label="Volume">
+            <span>🔊</span>
+        </div>
+        <audio id="audio"></audio>
+    </main>
+    <p class="creditos">Feito com &lt;3 por <a href="https://github.com/ykaro8580" target="_blank">ykaro</a></p>
+
+    <div class="aviso" id="aviso" role="dialog" aria-modal="true" aria-labelledby="aviso-texto" hidden>
+        <div class="aviso-caixa" id="aviso-texto">
+            <p>Esse projeto foi feito pra demonstrar minha admiração por você e pelo que você escolhe sempre compartilhar comigo. Espero que goste, foi feito com amor =)</p>
+            <p>OBS: Tem poucas musicas pq alguem ai fica me mandando as melhores em visualiação unica, alem de tudo estar sem tratamento de audio, até pq se foi vc q fez, pra mim ja está otimo</p>
+            <button id="aviso-ok">Entrar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
