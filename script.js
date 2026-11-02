@@ -6,6 +6,7 @@ const musica = [
     { titulo: "Hotel California",         artista: "Dona Duarte", genero: "Rock", audio: "assets/musicas/musica 3.mp3", capa: "assets/capas/capa 3.jpg" },
     { titulo: "Still Loving You",         artista: "Dona Duarte", genero: "Rock", audio: "assets/musicas/musica 4.mp3", capa: "assets/capas/capa 4.jpg" },
     { titulo: "Enter Sandman",            artista: "Dona Duarte", genero: "Rock", audio: "assets/musicas/musica 6.mp3", capa: "assets/capas/capa 6.jpg" },
+    { titulo: "Ole ole ola",            artista: "Dona Duarte", genero: "Mencao Honrosa", audio: "assets/musicas/musica 8.mp3", capa: "assets/capas/capa 8.jpg" },
 ];
 
 const $ = (id) => document.getElementById(id);
